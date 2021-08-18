@@ -5,7 +5,7 @@ import Mail from "nodemailer/lib/mailer";
 export class MailtrapMailProvider implements IMailProvider {
   private transporter: Mail;
 
-  contructor() {
+  constructor() {
     this.transporter = nodemailer.createTransport({
       host: "smtp.mailtrap.io",
       port: 2525,
